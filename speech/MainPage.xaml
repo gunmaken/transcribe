@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="speech.MainPage">
+
+    <StackLayout>
+        <Image x:Name="wordsImage" Source="" />
+        <Frame>
+            <ScrollView x:Name="scroll">
+                <Label x:Name="transcribedText" Text="Hello"/>
+            </ScrollView>
+        </Frame>
+        <ActivityIndicator x:Name="transcribingIndicator" IsRunning="False" />
+        <Button x:Name="transButton" Clicked="TranscribeButton" Text="Transcribed"/>
+    </StackLayout>
+
+</ContentPage>
